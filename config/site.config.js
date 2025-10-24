@@ -37,10 +37,6 @@ module.exports = {
   footer:
     'Powered by <a href="https://github.com/lyc8503/onedrive-cf-index-ng" target="_blank" rel="noopener noreferrer">onedrive-cf-index-ng</a>. Made with ❤ by ncat.',
 
-  // [OPTIONAL] This is where you specify the folders that are password protected. It is an array of paths pointing to all
-  // the directories in which you have .password set. Check the documentation for details.
-  protectedRoutes: ['/Private', '/Demo/😎Another Private Folder Password 123'],
-
   // [OPTIONAL] Use "" here if you want to remove this email address from the nav bar.
   email: 'mailto:nguyencaoantuong@proton.me',
 
@@ -57,5 +53,5 @@ module.exports = {
   // This is a day.js-style datetime format string to format datetimes in the app. Ref to
   // https://day.js.org/docs/en/display/format for detailed specification. The default value is ISO 8601 full datetime
   // without timezone and replacing T with space.
-  datetimeFormat: 'DD-MM-YYYY HH:mm:ss',
+  datetimeFormat: 'DD/MM/YYYY, HH:mm:ss',
 }
