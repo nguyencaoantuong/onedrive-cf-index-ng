@@ -7,7 +7,7 @@ module.exports = {
   // Make sure this is exactly the same as the email address you use to sign into your Microsoft account.
   // You can also put this in your worker's environment variable if you worry about
   // your email being exposed in public.
-  userPrincipalName: process.env.USER_PRINCIPLE_NAME || 'nguyenkhanh.astralmagic@wq64c.onmicrosoft.com',
+ userPrincipalName: process.env.USER_PRINCIPLE_NAME || 'nguyenkhanh.astralmagic@wq64c.onmicrosoft.com',
 
   // [OPTIONAL] This is the website icon to the left of the title inside the navigation bar. It should be placed under the
   // /public directory of your GitHub project (not your OneDrive folder!), and referenced here by its relative path to /public.
@@ -15,7 +15,7 @@ module.exports = {
 
   // The name of your website. Present alongside your icon.
   title: "ncat's OneDrive",
-
+  
   // The folder that you are to share publicly with onedrive-cf-index-ng. Use '/' if you want to share your root folder.
   baseDirectory: process.env.BASE_DIRECTORY || '/',
 
@@ -35,10 +35,14 @@ module.exports = {
   // [OPTIONAL] The footer component of your website. You can write HTML here, but you need to escape double
   // quotes - changing " to \". You can write anything here, and if you like badges, generate some with https://shields.io
   footer:
-    'Powered by <a href="https://github.com/lyc8503/onedrive-cf-index-ng" target="_blank" rel="noopener noreferrer">onedrive-cf-index-ng</a>. Made with ❤ by ncat.',
+    'Powered by <a href="https://github.com/lyc8503/onedrive-cf-index-ng" target="_blank" rel="noopener noreferrer">onedrive-cf-index-ng</a>. Made with ❤ by lyc8503.',
+
+  // [OPTIONAL] This is where you specify the folders that are password protected. It is an array of paths pointing to all
+  // the directories in which you have .password set. Check the documentation for details.
+  protectedRoutes: ['/Private', '/Demo/😎Another Private Folder Password 123'],
 
   // [OPTIONAL] Use "" here if you want to remove this email address from the nav bar.
-  email: 'mailto:nguyencaoantuong@proton.me',
+  email: 'mailto:me@lyc8503.net',
 
   // [OPTIONAL] This is an array of names and links for setting your social information and links.
   // In the latest update, all brand icons inside font awesome is supported and the icon to render is based on the name
@@ -46,12 +50,12 @@ module.exports = {
   links: [
     {
       name: 'GitHub',
-      link: 'https://github.com/nguyencaoantuong',
+      link: 'https://github.com/lyc8503',
     },
   ],
 
   // This is a day.js-style datetime format string to format datetimes in the app. Ref to
   // https://day.js.org/docs/en/display/format for detailed specification. The default value is ISO 8601 full datetime
   // without timezone and replacing T with space.
-  datetimeFormat: 'DD/MM/YYYY, HH:mm:ss',
+  datetimeFormat: 'YYYY-MM-DD HH:mm:ss',
 }
